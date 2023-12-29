@@ -1,0 +1,9 @@
+.service-card {
+  /* background: red; */
+}
+
+.service-card-item {
+  border: 1px solid #303030;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+}

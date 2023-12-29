@@ -1,0 +1,14 @@
+input {
+  background: none;
+  border: 2px solid white;
+  outline: none;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+input:focus {
+  transition: all 1s;
+  border: 2px solid #e32185;
+}

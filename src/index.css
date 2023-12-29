@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Mont"; /*Can be any text*/
+    src: local("Mont"), url("./fonts/Mont-Light.otf") format("opentype");
+    font-weight: 200;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Mont"; /*Can be any text*/
+    src: local("Mont"), url("./fonts/Mont-Light.otf") format("opentype");
+    font-weight: 300;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Mont"; /*Can be any text*/
+    src: local("Mont"), url("./fonts/Mont-Book.otf") format("opentype");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Mont"; /*Can be any text*/
+    src: local("Mont"), url("./fonts/Mont-Regular.otf") format("opentype");
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Mont"; /*Can be any text*/
+    src: local("Mont"), url("./fonts/Mont-Bold.otf") format("opentype");
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Mont"; /*Can be any text*/
+    src: local("Mont"), url("./fonts/Mont-SemiBold.otf") format("opentype");
+    font-weight: 700;
+    font-display: swap;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* font-family: "mont"; */
+}

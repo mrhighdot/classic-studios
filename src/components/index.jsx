@@ -12,9 +12,11 @@ import FAQs from "./FAQ";
 import NewsLetter from "./NewsLetter";
 import Cover from "./Cover";
 import SortCategory from "./SortCategory";
+import Hero from "./Hero";
 
 export {
   Circle,
+  Hero,
   Navbar,
   Applayout,
   Error,

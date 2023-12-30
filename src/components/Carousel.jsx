@@ -25,7 +25,7 @@ const Carousel = () => {
             return (
               <div
                 key={view.id}
-                className="flex items-center justify-center h-full min-w=[100vw]"
+                className="flex items-center justify-center h-full min-w-[100vw]"
                 style={{ transform: `translateX(-${current * 100}%)` }}
               >
                 <img

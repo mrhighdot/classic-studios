@@ -3,6 +3,7 @@ import {
   AuditRequest,
   Carousel,
   Circle,
+  Hero,
   ServicesCard,
   SuccessStories,
   Testimonials,
@@ -13,7 +14,8 @@ const Home = () => {
   return (
     <>
       <div className="w-full h-full ">
-        <Carousel />
+        {/* <Carousel /> */}
+        <Hero />
       </div>
       <div className="flex items-center justify-center ">
         <Circle />

@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mont: ["Mont", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      colors: {
+        primary: "#f8ea36",
+        secondary: "#000000",
       },
     },
   },

@@ -58,7 +58,7 @@ const Navbar = () => {
             <div className="absolute bg-[#303030] z-30 top-[100%] font-[500] py-6 flex sm:flex-row flex-col text-white w-full items-center sm:items-end">
               {links.map((link) => (
                 <Link
-                  className="font-mont font-[200] px-2 py-3 w-full rounded-full flex items-center justify-center hover:bg-[#e32185] active:bg-[#e32185] hover:text-white active:text-white transition 2500s"
+                  className="font-mont font-[200] px-2 py-3 w-full rounded-full flex items-center justify-center hover:bg-primary active:bg-primary hover:text-black active:text-black transition 2500s"
                   to={link.path}
                   key={link.id}
                   onClick={() => {
@@ -73,7 +73,7 @@ const Navbar = () => {
             <div className="font-[500] px-8  hidden">
               {links.map((link) => (
                 <Link
-                  className="font-mont font-[200] py-3 px-5 hover:bg-[#e32185] active:bg-[#e32185] hover:text-white active:text-white transition 2500s"
+                  className="font-mont font-[200] py-3 px-5 hover:bg-primary active:bg-primary hover:text-black active:text-black transition 2500s"
                   to={link.path}
                   key={link.id}
                 >
@@ -89,7 +89,7 @@ const Navbar = () => {
             <Link
               key={link.id}
               to={link.path}
-              className="font-mont font-[200] py-2 px-6 rounded-full hover:bg-[#e32185] active:bg-[#e32185] hover:text-white active:text-white transition 2500s hover:rounded-full "
+              className="font-mont font-[200] py-2 px-6 rounded-full hover:bg-primary active:bg-primary hover:text-black active:text-black transition 2500s hover:rounded-full "
             >
               <span>{link.name}</span>
             </Link>

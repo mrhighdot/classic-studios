@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex fixed w-full z-[1000] flex-col sm:flex-row items-center justify-between px-6 py-6 sm:px-12 bg-[#303030] ">
+    <nav className="flex fixed w-full z-[1000] flex-col sm:flex-row items-center justify-between px-6 py-4 sm:px-12 bg-[#303030] ">
       <div className="relative flex flex-row items-center justify-between w-full sm:w-auto">
         <Link to="/">
           <img src={logo} alt="" className="w-[160px]" />
@@ -30,7 +30,7 @@ const Navbar = () => {
 
         {windowWidth < 640 &&
           (isOpen ? (
-            <button
+            <buttonß
               type="button"
               onClick={() => setIsOpen(!isOpen)}
               className="text-2xl text-white"
@@ -38,7 +38,7 @@ const Navbar = () => {
               <span className="text-white">
                 <IoClose />
               </span>
-            </button>
+            </buttonß>
           ) : (
             <button
               type="button"

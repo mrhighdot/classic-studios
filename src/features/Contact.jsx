@@ -30,7 +30,7 @@ const Contact = () => {
             Ready to grow your revenue?
           </h1>
           <p className="border-b pb-4 border-b-[#303030]">
-            When you partner with Brand Surge Marketing, we take care of the
+            When you partner with Classic Studios, we take care of the
             heavy lifting, so you can enjoy more website traffic, leads, and
             revenue
           </p>

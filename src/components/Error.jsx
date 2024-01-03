@@ -12,7 +12,7 @@ const Error = () => {
     <>
       <Navbar />
       <section className="flex flex-col items-center justify-center w-full h-[100dvh]">
-        <h1 className="mb-6 text-4xl leading-[4rem] text-center sm:text-5xl font-semibold text-[#E32185]">
+        <h1 className="mb-6 text-4xl leading-[4rem] text-center sm:text-5xl font-semibold text-black">
           Oops,
           <br /> looks like you&apos;re lost
         </h1>

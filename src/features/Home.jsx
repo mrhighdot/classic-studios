@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <>
       <div className="w-full h-full ">
-        {/* <Carousel /> */}
-        <Hero />
+        <Carousel />
+        {/* <Hero /> */}
       </div>
       <div className="flex items-center justify-center ">
         <Circle />

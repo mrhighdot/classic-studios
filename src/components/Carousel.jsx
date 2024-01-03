@@ -19,13 +19,13 @@ const Carousel = () => {
   }, []);
   return (
     <>
-      <div className="h-[100dvh] w-full items-center justify-center flex overflow-hidden flex-row relative">
-        <div className="flex w-full h-full overflow-hidden bg-red-700">
+      <section className="h-[100dvh] w-full items-center justify-center flex overflow-hidden flex-row relative">
+        <sction className="flex w-full h-full overflow-hidden bg-red-700">
           {images.map((view) => {
             return (
-              <div
+              <section
                 key={view.id}
-                className="flex items-center justify-center h-full min-w-[100vw]"
+                className="flex items-center justify-center h-full min-w-[100vw] transition-transform duration-600"
                 style={{ transform: `translateX(-${current * 100}%)` }}
               >
                 <img
@@ -33,14 +33,14 @@ const Carousel = () => {
                   key={view.id}
                   className="object-cover w-full h-full"
                 />
-              </div>
+              </section>
             );
           })}
           {/* {Array.from({ length: 5 }, (_, index) => (
           <div key={index} className="w-full bg-yellow-300">{index}</div>
         ))} */}
-        </div>
-      </div>
+        </sction>
+      </section>
 
       <div className="absolute z-40 bottom-[4rem] flex w-full justify-center">
         <div className="flex gap-8 text-4xl text-[#E32185] bg-[#ffffffed] px-3 py-2 rounded-full">

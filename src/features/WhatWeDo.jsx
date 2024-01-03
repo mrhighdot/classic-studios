@@ -15,16 +15,16 @@ const WhatWeDo = () => {
             <h5 className="mt-3 text-lg font-semibold uppercase sm:mt-0">
               What we do
             </h5>
-            <h2 className="mt-3 sm:text-5xl text-4xl sm:mt-3">
+            <h2 className="mt-3 text-4xl sm:text-5xl sm:mt-3">
               We solve digital challenges
             </h2>
           </div>
           <div className="sm:w-[50%] w-full my-6 sm:my-0">
             <p className="leading-8">
-              Welcome to Brand Surge Marketing! We are a team of passionate
-              marketing experts, channel architects, and sales professionals
-              dedicated to crafting success stories for individuals, products,
-              and businesses alike.
+              Welcome to Classic Studios! We are a team of passionate marketing
+              experts, channel architects, and sales professionals dedicated to
+              crafting success stories for individuals, products, and businesses
+              alike.
             </p>
             <div className="mt-6 sm:w-[40%] w-[70%] flex justify-between items-center">
               <span className="font-bold">Learn more about us</span>

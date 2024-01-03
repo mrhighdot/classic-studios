@@ -24,7 +24,7 @@ const Footer = () => {
                   <Link
                     to={link.path}
                     key={link.id}
-                    className="hover:text-[#E32185] transition "
+                    className="hover:text-primary transition "
                   >
                     {link.name}
                   </Link>
@@ -41,7 +41,7 @@ const Footer = () => {
                   <Link
                     to={link.path}
                     key={link.id}
-                    className="hover:text-[#E32185] transition "
+                    className="hover:text-primary transition "
                   >
                     {link.name}
                   </Link>
@@ -58,7 +58,7 @@ const Footer = () => {
                   <Link
                     to={link.path}
                     key={link.id}
-                    className="hover:text-[#E32185] transition "
+                    className="hover:text-primary transition "
                   >
                     {link.name}
                   </Link>

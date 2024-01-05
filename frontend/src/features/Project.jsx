@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { dummyData } from "../constants/dummyData";
 
-const Project = ({ index }) => {
+const Project = () => {
   const { id } = useParams();
 
   const selectedBlog = dummyData.find((data) => data.id === id);
@@ -34,7 +34,5 @@ const Project = ({ index }) => {
     </section>
   );
 };
-
-
 
 export default Project;

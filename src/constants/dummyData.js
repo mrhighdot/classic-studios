@@ -1,5 +1,6 @@
 export const dummyData = [
   {
+    id: "1",
     title: "Portfolio 001",
     description: "First portfolio",
     coverImg:
@@ -37,6 +38,7 @@ export const dummyData = [
     ],
   },
   {
+    id: "2",
     title: "Portfolio 002",
     description: "First portfolio",
     coverImg:
@@ -74,6 +76,7 @@ export const dummyData = [
     ],
   },
   {
+    id: "3",
     title: "Portfolio 003",
     description: "First portfolio",
     coverImg:
@@ -111,6 +114,7 @@ export const dummyData = [
     ],
   },
   {
+    id: "4",
     title: "Portfolio 004",
     description: "First portfolio",
     coverImg:
@@ -148,6 +152,7 @@ export const dummyData = [
     ],
   },
   {
+    id: "5",
     title: "Portfolio 005",
     description: "First portfolio",
     coverImg:
@@ -185,6 +190,7 @@ export const dummyData = [
     ],
   },
   {
+    id: "6",
     title: "Portfolio 006",
     description: "First portfolio",
     coverImg:
@@ -222,6 +228,7 @@ export const dummyData = [
     ],
   },
   {
+    id: "7",
     title: "Portfolio 007",
     description: "First portfolio",
     coverImg:

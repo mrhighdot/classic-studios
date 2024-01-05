@@ -5,6 +5,7 @@ import logo from "../assets/icons/brand/logo_white.png";
 import { legalLinks, links } from "../constants/constants";
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const currentYear = new Date().getUTCFullYear();
   return (
     <footer className="bg-[#303030] w-full p-8 sm:p-[6rem] text-white">
       {/* Logo Section */}
@@ -85,7 +86,7 @@ const Footer = () => {
             </button>
           </div>
           <span className="mb-6 text-sm font-bold uppercase">
-            Copyright © 2023 | Classic Studios | All Rights Reserved
+            Copyright © {currentYear} | Classic Studios | All Rights Reserved
           </span>
         </div>
       </div>

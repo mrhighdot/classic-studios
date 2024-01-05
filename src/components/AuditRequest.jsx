@@ -16,9 +16,9 @@ const AuditRequest = () => {
           <div className="mt-6">
             <button className="bg-white rounded-full py-3 px-8  active:text-white active:border-none active:bg-primary hover:bg-primary focus:text-black transition duration-500">
               <Link to="/contact">
-                <button className="text-[#303030] active:text-white active:border-none active:bg-primary hover:bg-primary focus:text-black transition duration-500">
+                <span className="text-[#303030] active:text-white active:border-none active:bg-primary hover:bg-primary focus:text-black transition duration-500">
                   Get a free audit
-                </button>
+                </span>
               </Link>
             </button>
           </div>

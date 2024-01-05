@@ -34,41 +34,17 @@ const Projects = () => {
         {/* List of Blogs */}
         <section className="grid w-full gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Container */}
-          {posts.map(({id,title, description, coverImg, category }, ) => {
+          {posts.map(({ title, description }, index) => {
             return (
-              <section
-                key={id}
-                className="p-4 rounded-lg shadow-lg shadow-slate-100"
-              >
-                
-                <div className="h-40 overflow-hidden rounded-lg mb-8">
-                  <img
-                    src={coverImg}
-                    alt="Cover Image"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-
-                <div className="mb-4">
-
-                  <span className="px-4 py-2 text-xs border rounded-full border-slate-500">
-                    {category}
-                  </span>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <Link to={`/projects/${id}`}>
-                    <h3 className="text-2xl">{title}</h3>
-                  </Link>
-                  <span className="mb-4 leading-8">
-                    {description.slice(0, 30).concat("...")}
-                  </span>
-                </div>
+              <section key={index}>
+                <ProjectPreview
+                  title={title}
+                  index={index}
+                  description={description}
+                />
               </section>
             );
           })}
-          {/* {posts?.map((post, index) => {
-            return <Project key={index} {...post} />;
-          })} */}
         </section>
       </div>
     </main>
@@ -76,3 +52,26 @@ const Projects = () => {
 };
 
 export default Projects;
+
+const ProjectPreview = ({ title, description, index }) => {
+  return (
+    <>
+      <section>
+        <div className="w-full flex items-center justify-center overflow-hidden h-[16rem] rounded-lg mb-4">
+          <img
+            src="https://images.pexels.com/photos/19084962/pexels-photo-19084962/free-photo-of-rocks-between-clouds.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+            alt=""
+            className="object-cover w-full h-full transition duration-500 hover:scale-125"
+          />
+        </div>
+        {/* Project Details */}
+        <div className="flex flex-col gap-3">
+          <Link to={`/projects/${index}`}>
+            <h3 className="text-3xl">{title}</h3>
+          </Link>
+          <p className="">{description}</p>
+        </div>
+      </section>
+    </>
+  );
+};

@@ -13,6 +13,7 @@ import NewsLetter from "./NewsLetter";
 import Cover from "./Cover";
 import SortCategory from "./SortCategory";
 import Hero from "./Hero";
+import VideoComponent from "./Video";
 
 export {
   Circle,
@@ -30,4 +31,5 @@ export {
   NewsLetter,
   Cover,
   SortCategory,
+  VideoComponent,
 };

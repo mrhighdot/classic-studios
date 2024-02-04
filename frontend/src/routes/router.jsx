@@ -7,6 +7,7 @@ import {
   Project,
   Projects,
   Services,
+  StoreItem,
   Surge,
 } from "../features";
 
@@ -37,8 +38,12 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/blog",
+        path: "/store",
         element: <Surge />,
+      },
+      {
+        path: "/store:id",
+        element: <StoreItem />,
       },
       {
         path: "/contact",

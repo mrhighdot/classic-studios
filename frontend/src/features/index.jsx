@@ -6,9 +6,11 @@ import Surge from "./Surge";
 import Contact from "./Contact";
 import WhatWeDo from "./WhatWeDo";
 import Project from "./Project";
+import StoreItem from "./StoreItem";
 import ProjectsCollection from "./ProjectsCollection";
 
 export {
+  StoreItem,
   Home,
   Services,
   Projects,

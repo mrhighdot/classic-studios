@@ -8,8 +8,8 @@ const Surge = () => {
     document.title = "Classic Studios | Blog";
   });
   return (
-    <main className="grid w-full h-auto grid-cols-2 grid-rows-1 px-8 py-12">
-      <section className="flex flex-col flex-wrap gap-4 sm:flex-row">
+    <main className="grid w-full h-auto grid-cols-2 grid-rows-1 px-8 py-24">
+      <section className="flex flex-col flex-wrap justify-between col-span-2 gap-4 sm:flex-row">
         {dummyStore.map((store) => {
           console.log(store.image_url);
           return (
@@ -35,7 +35,9 @@ const Surge = () => {
                 {store.category}
               </span>
               <div className="flex flex-col gap-2 mt-4">
-                <h5 className="text-lg">{store.name}</h5>
+                <Link to={`/store/${store.id}`} key={store.id}>
+                  <h5 className="text-lg">{store.name}</h5>
+                </Link>
                 <div className="flex flex-row items-center justify-between">
                   <h6 className="text-md">
                     <strong>{store.stock}</strong> pieces available
@@ -47,7 +49,6 @@ const Surge = () => {
           );
         })}
       </section>
-      <aside>This is the aside tag</aside>
     </main>
   );
 };

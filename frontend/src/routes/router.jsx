@@ -42,7 +42,7 @@ const router = createBrowserRouter([
         element: <Surge />,
       },
       {
-        path: "/store:id",
+        path: "/store/:id",
         element: <StoreItem />,
       },
       {

@@ -21,6 +21,8 @@ export const images = [
   },
 ];
 
+
+
 export const links = [
   {
     id: 1,
@@ -37,18 +39,14 @@ export const links = [
     path: "/projects",
     name: "Projects",
   },
+
   {
     id: 4,
-    path: "/about",
-    name: "About",
-  },
-  {
-    id: 5,
     path: "/store",
     name: "Store",
   },
   {
-    id: 6,
+    id: 5,
     path: "/contact",
     name: "Contact",
   },

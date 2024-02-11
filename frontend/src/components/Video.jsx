@@ -9,6 +9,7 @@ export default function VideoComponent(props) {
   return (
     <video
       className={props.className}
+      style={props.style}
       ref={videoRef}
       loop
       autoPlay

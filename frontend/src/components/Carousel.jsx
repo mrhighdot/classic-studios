@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import video1 from "../assets/videos/001.mp4";
+import video2 from "../assets/videos/002.mp4";
+import video3 from "../assets/videos/003.mp4";
 import { PiArrowCircleLeftFill, PiArrowCircleRightFill } from "react-icons/pi";
-import { images } from "constants/constants";
+
 import { VideoComponent } from ".";
 
 const Carousel = () => {
@@ -8,11 +11,27 @@ const Carousel = () => {
   const autoSlideInterval = 6000;
   const [current, setCurrent] = useState(0);
   const prev = () =>
-    setCurrent((current) => (current === 0 ? images.length - 1 : current - 1));
+    setCurrent((current) => (current === 0 ? videos.length - 1 : current - 1));
   const next = () =>
-    setCurrent((current) => (current === images.length - 1 ? 0 : current + 1));
+    setCurrent((current) => (current === videos.length - 1 ? 0 : current + 1));
 
   console.log(current);
+
+  const videos = [
+    {
+      id: 1,
+      cover: video1,
+    },
+    {
+      id: 2,
+      cover: video2,
+    },
+    {
+      id: 3,
+      cover: video3,
+    },
+  ];
+
   useEffect(() => {
     if (!autoSlide) return;
     const slideInterval = setInterval(next, autoSlideInterval);
@@ -22,25 +41,19 @@ const Carousel = () => {
     <>
       <section className="h-[100dvh] w-full items-center justify-center flex overflow-hidden flex-row relative">
         <sction className="flex w-full h-full overflow-hidden bg-red-700">
-          {/* {images.map((view) => {
+          {/* {videos.map((view) => {
             return (
-              <section
+              <VideoComponent
+                className="flex items-center justify-center w-full h-full overflow-hidden"
+                video={view.cover}
                 key={view.id}
-                className="flex items-center justify-center h-full min-w-[100vw] transition-transform duration-600"
-                style={{ transform: `translateX(-${current * 100}%)` }}
-              >
-                <img
-                  src={view.cover}
-                  key={view.id}
-                  className="object-cover w-full h-full"
-                />
-               
-              </section>
+              />
             );
           })} */}
           <VideoComponent
-            className=""
-            video="https://www.pexels.com/video/brook-stream-lake-river-19292126/"
+            className="object-cover w-full h-full overflow-hidden"
+            video={video3}
+            // style={{ objectfit: "cover", width: "100%", height: "100%" }}
           />
         </sction>
       </section>

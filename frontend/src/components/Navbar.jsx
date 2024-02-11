@@ -22,15 +22,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex fixed w-full z-[1000] flex-col sm:flex-row items-center justify-between px-6 py-4 sm:px-12 bg-[#303030] ">
-      <div className="relative flex flex-row items-center justify-between w-full sm:w-auto">
+    <nav className="flex w-full  flex-col sm:flex-row items-center justify-between px-6 py-4 sm:px-12 bg-[#303030] ">
+      <div className="flex flex-row items-center justify-between w-full sm:w-auto">
         <Link to="/">
           <img src={logo} alt="" className="w-[160px]" />
         </Link>
 
         {windowWidth < 640 &&
           (isOpen ? (
-            <buttonß
+            <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
               className="text-2xl text-white"
@@ -38,7 +38,7 @@ const Navbar = () => {
               <span className="text-white">
                 <IoClose />
               </span>
-            </buttonß>
+            </button>
           ) : (
             <button
               type="button"
@@ -55,7 +55,7 @@ const Navbar = () => {
       {windowWidth < 640 ? (
         <>
           {isOpen ? (
-            <div className="absolute bg-[#303030] z-30 top-[100%] font-[500] py-6 flex sm:flex-row flex-col text-white w-full items-center sm:items-end">
+            <div className=" bg-[#303030] font-[500] py-6 flex sm:flex-row flex-col text-white w-full items-center sm:items-end">
               {links.map((link) => (
                 <Link
                   className="font-mont font-[200] px-2 py-3 w-full rounded-full flex items-center justify-center hover:bg-primary active:bg-primary hover:text-black active:text-black transition 2500s"

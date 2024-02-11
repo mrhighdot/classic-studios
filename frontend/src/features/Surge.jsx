@@ -8,10 +8,9 @@ const Surge = () => {
     document.title = "Classic Studios | Blog";
   });
   return (
-    <main className="grid w-full h-auto grid-cols-2 grid-rows-1 px-8 py-24">
+    <main className="grid w-full h-auto grid-cols-2 grid-rows-1 px-8 py-10">
       <section className="flex flex-col flex-wrap justify-between col-span-2 gap-4 sm:flex-row">
         {dummyStore.map(({ id, image_url, category, name, stock, price }) => {
-
           return (
             <section key={id} className="">
               <div className="w-[18rem] h-[12rem] rounded-lg overflow-hidden mb-4">
@@ -22,14 +21,15 @@ const Surge = () => {
                 />
               </div>
               <span
-                className={` px-4 py-2 text-[12px] rounded-full ${category === "Electronics"
-                  ? " text-black bg-primary"
-                  : category === "Fashion"
+                className={` px-4 py-2 text-[12px] rounded-full ${
+                  category === "Electronics"
+                    ? " text-black bg-primary"
+                    : category === "Fashion"
                     ? "text-white  bg-red-600"
                     : category === "Sports"
-                      ? "text-white bg-blue-600"
-                      : "text-black bg-gray-100"
-                  }`}
+                    ? "text-white bg-blue-600"
+                    : "text-black bg-gray-100"
+                }`}
               >
                 {category}
               </span>

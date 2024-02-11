@@ -31,53 +31,7 @@ const Testimonials = () => {
           Data-driven, customer-centric marketing services
         </h3>
       </div>
-      <div className="bg-white rounded-lg sm:p-[3rem] p-[1.5rem] flex flex-col sm:flex-row mb-10">
-        <div className="text-[#303030] mt-4 sm:mt-0 sm:mr-[4rem]">
-          <img src={quote} alt="quote" className="mb-5 w-[50px] sm:w-auto" />
-          <h4 className="my-8 text-2xl sm:text-3xl sm:mt-2">
-            The staff are friendly and know their job
-          </h4>
-          {/* Name */}
-          <div className="flex flex-col gap-1 mb-8">
-            <span className="font-bold">John Doe</span>
-            <span>Rabito Staff</span>
-            <div className="flex gap-4 mt-2 text-[#E32185]">
-              <button
-                ref={prevSlide}
-                onClick={() => console.log("Left Clicked")}
-              >
-                <PiArrowCircleLeftFill className="text-3xl" ref={prevSlide} />
-              </button>
-              <button
-                ref={nextSlide}
-                onClick={() => console.log("Right Clicked")}
-              >
-                <PiArrowCircleRightFill className="text-3xl" ref={nextSlide} />
-              </button>
-            </div>
-          </div>
-        </div>
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={0}
-          slidesPerView={1}
-          navigation={{
-            prevEl: prevSlide.current,
-            nextEl: nextSlide.current,
-          }}
-          className="w-full h-[12rem] sm:h-[24rem] overflow-hidden rounded-lg "
-        >
-          <SwiperSlide className="flex items-center justify-center w-full h-auto overflow-hidden">
-            <img src={image2} alt="" className="object-cover w-full h-full" />
-          </SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center w-full h-auto overflow-hidden">
-            <img src={image3} alt="" className="object-cover w-full h-full" />
-          </SwiperSlide>
-          <SwiperSlide className="flex items-center justify-center w-full h-auto overflow-hidden">
-            <img src={image4} alt="" className="object-cover w-full h-full" />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+      <section>hello</section>
     </div>
   );
 };

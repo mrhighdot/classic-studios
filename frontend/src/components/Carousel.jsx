@@ -50,6 +50,9 @@ const Carousel = () => {
               />
             );
           })} */}
+          <button className="absolute px-3 py-1 hover:bg-yellow-300 border border-yellow-300 text-black hover:text-white focus:bg-yellow-300 bg-white rounded-full bottom-[15%] animate-bounce duration-300 left-[46.5%]">
+            <span className="text-xs">Scroll down </span>
+          </button>
           <VideoComponent
             className="object-cover w-full h-full overflow-hidden"
             video={video3}

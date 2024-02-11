@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex w-full  flex-col sm:flex-row items-center justify-between px-6 py-4 sm:px-12 bg-[#303030] ">
+    <nav className="flex w-full  flex-col sm:flex-row items-center justify-between text-sm px-6 py-4 sm:px-12 bg-[#303030] ">
       <div className="flex flex-row items-center justify-between w-full sm:w-auto">
         <Link to="/">
           <img src={logo} alt="" className="w-[160px]" />
